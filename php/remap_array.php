@@ -16,15 +16,4 @@ function remap($array, $keys, $no_change=false) {
     }
     
     return $result;
-    
-//    foreach($array as $key => $value) {
-//		if(isset($keys[$key])) {
-//			//add element with new key to the returned array
-//			$result[$keys[$key]] = $value;
-//		} elseif($no_change) {
-//			//add element with the old key to the returned array
-//			$result[$key] = $value;
-//		}
-//	}
-//	return $result;
 }
