@@ -7,7 +7,8 @@
  */
 function remap($array, $keys, $no_change=false) {
     foreach($keys as $keyIn => $keyOut) {
-        $result[$keyOut] = $array[$keyIn];
+        if(isset($array[$keyIn]))
+            $result[$keyOut] = $array[$keyIn];
         unset($array[$keyIn]);
     }
     
